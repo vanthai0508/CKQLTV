@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_all_ls.xml" value="0.14583333333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_dang_ky.xml" value="0.1598731884057971" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_dang_ky_ns.xml" value="0.13125" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_home.xml" value="0.1598731884057971" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_homes.xml" value="0.13858695652173914" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_login.xml" value="0.13072916666666667" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_main.xml" value="0.11614583333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_sua_tk.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/header.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/list_thanhtoan.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/list_tk.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/loai.xml" value="0.15307971014492755" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/thanhtoan.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/thongke.xml" value="0.15307971014492755" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/trangchu.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/menu/edit_menu.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/menu/item_menu.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/menu/menu_ql.xml" value="0.13020833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
