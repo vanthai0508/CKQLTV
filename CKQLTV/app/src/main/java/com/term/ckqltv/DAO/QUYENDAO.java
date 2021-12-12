@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.term.ckqltv.DTO.KHDTO;
 import com.term.ckqltv.Database.database;
 
 public class QUYENDAO {
@@ -19,6 +20,7 @@ public class QUYENDAO {
         contentValues.put(database.TT_QUYEN_TENQUYEN,tenquyen);
         data.insert(database.TT_QUYEN,null,contentValues);
     }
+
 
 
     public String LayTenQuyenTheoMa(int maquyen){

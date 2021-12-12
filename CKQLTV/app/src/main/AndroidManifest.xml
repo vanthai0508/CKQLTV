@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CKQLTV">
         <activity
+            android:name=".Vieww.TCN"
+            android:exported="true" />
+        <activity
             android:name=".Vieww.Homes"
             android:exported="true" />
         <activity

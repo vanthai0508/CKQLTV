@@ -11,6 +11,7 @@
         <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_login.xml" value="0.13072916666666667" />
         <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_main.xml" value="0.11614583333333334" />
         <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_sua_tk.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/layout/activity_tcn.xml" value="0.12360688956433637" />
         <entry key="..\:/CKQLTV/app/src/main/res/layout/header.xml" value="0.13020833333333334" />
         <entry key="..\:/CKQLTV/app/src/main/res/layout/list_thanhtoan.xml" value="0.13020833333333334" />
         <entry key="..\:/CKQLTV/app/src/main/res/layout/list_tk.xml" value="0.13020833333333334" />
@@ -21,6 +22,7 @@
         <entry key="..\:/CKQLTV/app/src/main/res/menu/edit_menu.xml" value="0.13020833333333334" />
         <entry key="..\:/CKQLTV/app/src/main/res/menu/item_menu.xml" value="0.13020833333333334" />
         <entry key="..\:/CKQLTV/app/src/main/res/menu/menu_ql.xml" value="0.13020833333333334" />
+        <entry key="..\:/CKQLTV/app/src/main/res/menu/menu_tcn.xml" value="0.25025641025641027" />
       </map>
     </option>
   </component>

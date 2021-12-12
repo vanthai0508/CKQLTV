@@ -105,10 +105,24 @@ public class KHDAO {
             return false;
         }
     }
+    public void SuaTK(KHDTO khdto, int makh){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(database.TT_KH_HOTENKH,khdto.getHOTENKH());
+        contentValues.put(database.TT_KH_TENDN,khdto.getTENDN());
+
+        contentValues.put(database.TT_KH_EMAIL,khdto.getEMAIL());
+        contentValues.put(database.TT_KH_SDT,khdto.getSDT());
+        contentValues.put(database.TT_KH_MATKHAU,khdto.getMATKHAU());
+
+
+         data.update(database.TT_KHACHHANG,contentValues,
+                database.TT_KH_MAKH+" = "+makh,null);
+    //    return ktra;
+    }
 
     public KHDTO LayKHTheoMa(int makh){
         KHDTO khdto = new KHDTO();
-        String query = "SELECT * FROM "+database.TT_KHACHHANG+" WHERE "+database.TT_KHACHHANG+" = "+makh;
+        String query = "SELECT * FROM "+database.TT_KHACHHANG+" WHERE "+database.TT_KH_MAKH+" = "+makh;
         Cursor cursor = data.rawQuery(query,null);
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){

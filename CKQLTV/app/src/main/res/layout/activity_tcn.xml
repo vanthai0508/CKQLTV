@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vieww.TCN"
+
+    android:padding="30dp"
+    android:transitionName="transition_login"
+    android:id="@+id/layoutLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY TCN"
+            android:textSize="30dp"
+
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/img_login_backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backtrangchu"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingVertical="30dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ho Va Ten"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/et_hoten"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                ></EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingVertical="30dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ten Dang Nhap"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/et_tendangnhap"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                ></EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingVertical="30dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                ></EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingVertical="30dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="So Dien Thoai"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/et_sdt"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                ></EditText>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:paddingVertical="30dp"
+
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mat Khau"
+                ></TextView>
+
+            <EditText
+                android:id="@+id/et_mk"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                ></EditText>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+
+            >
+        <Button
+            android:id="@+id/bt_huy"
+            android:text="HUY"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:onClick="backtrangchu"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/bt_ok"
+
+            android:text="OK"
+            android:textColor="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:textSize="30dp"
+            >
+
+        </Button>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

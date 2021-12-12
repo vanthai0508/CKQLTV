@@ -56,6 +56,7 @@ public class Login extends AppCompatActivity {
                     editor.commit();
 
                     //gửi dữ liệu user qua trang chủ
+
                     Intent intent = new Intent(Login.this,Homes.class);
                     intent.putExtra("tendn",tenDN);
                     intent.putExtra("makh",ktra);

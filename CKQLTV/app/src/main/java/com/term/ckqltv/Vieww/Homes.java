@@ -1,5 +1,6 @@
 package com.term.ckqltv.Vieww;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -11,6 +12,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -29,6 +31,9 @@ public class Homes extends AppCompatActivity implements NavigationView.OnNavigat
     TextView TXT_menu_tenkh;
     int maquyen = 0;
     SharedPreferences sharedPreferences;
+    public String tendn;
+    public int makh;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +62,10 @@ public class Homes extends AppCompatActivity implements NavigationView.OnNavigat
         navigationView.setNavigationItemSelectedListener(this);
 
         Intent intent = getIntent();
-        String tendn = intent.getStringExtra("tendn");
+        makh=intent.getIntExtra("makh",0);
+
+        tendn = intent.getStringExtra("tendn");
+
         TXT_menu_tenkh.setText( "Xin chào " + tendn +" !!");
 
         //lấy file share prefer
@@ -65,14 +73,43 @@ public class Homes extends AppCompatActivity implements NavigationView.OnNavigat
         maquyen = sharedPreferences.getInt("maquyen",0);
 
       //  fragmentManager = getSupportFragmentManager();
-        FragmentTransaction tranDisplayHome = fragmentManager.beginTransaction();
-        Homefrm homefrm = new Homefrm();
-        tranDisplayHome.replace(R.id.contentView,homefrm);
-        tranDisplayHome.commit();
-        navigationView.setCheckedItem(R.id.nav_home);
+//        FragmentTransaction tranDisplayHome = fragmentManager.beginTransaction();
+//        Homefrm homefrm = new Homefrm();
+//        tranDisplayHome.replace(R.id.contentView,homefrm);
+//        tranDisplayHome.commit();
+//        navigationView.setCheckedItem(R.id.nav_home);
 
 
 
+    }
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId())
+        {
+            case android.R.id.home:
+                onBackPressed();
+                return  true;
+            case R.id.tcn:
+                Intent intent=new Intent(Homes.this,TCN.class);
+
+                intent.putExtra("makh",makh);
+
+                startActivity(intent);
+
+
+//                setResult(RESULT_OK,intent);
+//                startActivity(intent);
+//                finish();
+//                return   true;
+//            default:
+           break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_tcn, menu);
+        return true;
     }
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
